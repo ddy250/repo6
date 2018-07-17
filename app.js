@@ -32,7 +32,7 @@ app.post('/person', urlencodedParser, function(req, res) {
     information[i]=req.body.firstname;
     information[i+1]=req.body.lastname;
     information[i+2]=req.body.series1;
-    information[i+3]=req.body.series1;
+    information[i+3]=req.body.series2;
     i=i+4;
     var j;
 
