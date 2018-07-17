@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  h1 Welcome to the greatest NBA bet ever
+  form(method="POST" , action='/person')
+    | First name:
+    br
+    input#firstname(type='text', name='firstname')
+    br
+    |   Last name:
+    br
+    input#lastname(type='text', name='lastname')
+    br
+    br
+    |   Bulls vs. Indiana:
+    br
+    br
+    select(name='series1')
+      option(value='Bulls 4-0') Bulls 4-0
+      option(value='Bulls 4-1') Bulls 4-1
+      option(value='Bulls 4-2') Bulls 4-2
+      option(value='Bulls 4-3') Bulls 4-3
+      option(value='Indiana 4-0') Indiana 4-0
+      option(value='Indiana 4-1') Indiana 4-1
+      option(value='Indiana 4-2') Indiana 4-2
+      option(value='Indiana 4-3') Indiana 4-3
+    br
+    br
+    select(name='series2')
+      option(value='Celtics 4-0') Celtics 4-0
+      option(value='Celtics 4-1') Celtics 4-1
+      option(value='Celtics 4-2') Celtics 4-2
+      option(value='Celtics 4-3') Celtics 4-3
+      option(value='Lakers 4-0') Lakers 4-0
+      option(value='Lakers 4-1') Lakers 4-1
+      option(value='Lakers 4-2') Lakers 4-2
+      option(value='Lakers 4-3') Lakers 4-3
+    br
+    br
+    input(type='submit', value='Submit')
+
+

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    table(style="width:100%;")
+        thead
+            tr
+                th First name
+                th Last name
+                th series #1
+                th series #2
+
+        -for(var j=0; j<information.length/4; j++){
+            tr
+                -for(var i=0; i<4; i++){
+                    td=information[4*j+i]
+                -}
+        -}
+
